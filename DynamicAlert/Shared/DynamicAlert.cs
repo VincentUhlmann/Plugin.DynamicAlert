@@ -1,17 +1,16 @@
-﻿namespace Plugin.DynamicAlert
+﻿namespace Plugin.DynamicAlert;
+
+public partial class DynamicAlert
 {
-    public partial class DynamicAlert
-    {
-        private static readonly Lazy<DynamicAlert> current = new(true);
-        public static DynamicAlert Current => current.Value;
+    private static readonly Lazy<DynamicAlert> _current = new(true);
+    public static DynamicAlert Current => _current.Value;
 
-        public void Show(string title, string message) =>
-            PlatformShow(title, message);
+    public void Show(string title, string message) =>
+        PlatformShow(title, message);
 
-        public void Update(string message) =>
-            PlatformUpdate(message);
+    public void Update(string message) =>
+        PlatformUpdate(message);
 
-        public void Dismiss() =>
-            PlatformDismiss();
-    }
+    public void Dismiss() =>
+        PlatformDismiss();
 }

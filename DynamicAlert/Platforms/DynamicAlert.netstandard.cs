@@ -1,20 +1,19 @@
-﻿namespace Plugin.DynamicAlert
+﻿namespace Plugin.DynamicAlert;
+
+public partial class DynamicAlert
 {
-    public partial class DynamicAlert
+    private void PlatformShow(string title, string message)
     {
-        private void PlatformShow(string title, string message)
-        {
-            throw new NotImplementedException();
-        }
+        throw new NotImplementedException();
+    }
 
-        private void PlatformUpdate(string message)
-        {
-            throw new NotImplementedException();
-        }
+    private void PlatformUpdate(string message)
+    {
+        throw new NotImplementedException();
+    }
 
-        private void PlatformDismiss()
-        {
-            throw new NotImplementedException();
-        }
+    private void PlatformDismiss()
+    {
+        throw new NotImplementedException();
     }
 }
