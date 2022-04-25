@@ -1,4 +1,4 @@
-﻿#if !NET6_0
+﻿#if !NET6_0_OR_GREATER
 using Android.App;
 using Android.OS;
 #endif
