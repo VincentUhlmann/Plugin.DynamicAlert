@@ -1,2 +1,2 @@
 # Plugin.DynamicAlert
-DynamicAlert Plugin for Xamarin Forms
+DynamicAlert Plugin for Xamarin Forms and .NET MAUI
