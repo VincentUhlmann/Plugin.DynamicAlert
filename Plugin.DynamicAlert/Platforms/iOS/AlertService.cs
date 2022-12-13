@@ -17,10 +17,8 @@ public sealed partial class AlertService
         UIApplication.SharedApplication.InvokeOnMainThread(() => {
             _alertController = UIAlertController.Create(title, message, UIAlertControllerStyle.Alert);
 
-#pragma warning disable CA1416 // Validate platform compatibility
             var rootViewController = UIApplication.SharedApplication.Windows[0].RootViewController;
-#pragma warning restore CA1416 // Validate platform compatibility
-
+            
             rootViewController?.PresentViewController(_alertController, true, null);
         });
     }
