@@ -2,20 +2,46 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
-		<UseMaui>true</UseMaui>
+		<NeutralLanguage>en</NeutralLanguage>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
-		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>1.1.0</Version>
+		<AssemblyVersion>1.1.0</AssemblyVersion>
+		<AssemblyFileVersion>1.1.0</AssemblyFileVersion>
+		<AssemblyName>Plugin.DynamicAlert</AssemblyName>
+		<RootNamespace>Plugin.DynamicAlert</RootNamespace>
+		<PackageId>Plugin.DynamicAlert</PackageId>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Authors>Vincent Uhlmann</Authors>
+		<Title>.NET MAUI plugin for mutable alerts.</Title>
+		<Summary>.NET MAUI plugin for mutable alerts.</Summary>
+		<Description>.NET MAUI plugin for mutable alerts.</Description>
+		<Copyright>© Vincent Uhlmann. All rights reserved.</Copyright>
+		<RepositoryUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</RepositoryUrl>
+		<Owners>VincentUhlmann</Owners>
+		<PackageProjectUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</PackageProjectUrl>
+		<PackageTags>maui, .net, android, ios, plugin</PackageTags>
+		<PackageReleaseNotes>https://github.com/VincentUhlmann/Plugin.DynamicAlert</PackageReleaseNotes>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<SingleProject>true</SingleProject>
+		<PackOnBuild>true</PackOnBuild>
+		<UseMaui>true</UseMaui>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
 
+	<PropertyGroup>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
-
+	
 	<ItemGroup>
+	  <None Include="..\LICENSE" Pack="true" PackagePath="" />
 	  <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.0.0" />
 	</ItemGroup>
 </Project>
