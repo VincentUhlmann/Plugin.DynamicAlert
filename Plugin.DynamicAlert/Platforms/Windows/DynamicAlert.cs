@@ -1,8 +1,8 @@
-﻿namespace Plugin.DynamicAlert.Services;
+﻿namespace Plugin.DynamicAlert;
 
-public sealed partial class AlertService
+public sealed partial class DynamicAlert
 {
-    public void Show(string title, string message)
+    public DynamicAlert(string title, string message)
     {
         throw new NotImplementedException();
     }
