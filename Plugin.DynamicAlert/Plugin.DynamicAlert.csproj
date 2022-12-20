@@ -14,22 +14,24 @@
 		<PackageId>Plugin.DynamicAlert</PackageId>
 		<Product>$(AssemblyName) ($(TargetFramework))</Product>
 		<Authors>Vincent Uhlmann</Authors>
-		<Title>.NET MAUI plugin for mutable alerts.</Title>
-		<Summary>.NET MAUI plugin for mutable alerts.</Summary>
-		<Description>.NET MAUI plugin for mutable alerts.</Description>
+		<Title>.NET MAUI plugin for mutable alerts</Title>
+		<Summary>.NET MAUI plugin for mutable alerts</Summary>
+		<Description>.NET MAUI plugin for mutable alerts</Description>
 		<Copyright>© Vincent Uhlmann. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</RepositoryUrl>
 		<Owners>VincentUhlmann</Owners>
 		<PackageProjectUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</PackageProjectUrl>
-		<PackageTags>maui, .net, android, ios, plugin</PackageTags>
+		<PackageTags>maui, .net, android, ios, mac, windows, plugin</PackageTags>
 		<PackageReleaseNotes>https://github.com/VincentUhlmann/Plugin.DynamicAlert</PackageReleaseNotes>
 		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<SingleProject>true</SingleProject>
 		<PackOnBuild>true</PackOnBuild>
 		<UseMaui>true</UseMaui>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -42,6 +44,7 @@
 	
 	<ItemGroup>
 	  <None Include="..\LICENSE" Pack="true" PackagePath="" />
+	  <None Include="..\README.md" Pack="true" PackagePath="\"/>
 	  <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.0.0" />
 	</ItemGroup>
 </Project>
