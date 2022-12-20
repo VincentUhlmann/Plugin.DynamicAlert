@@ -10,7 +10,7 @@ If a Windows implementation or other changes are needed, I am happy about any pu
 
 | Android | iPhone |
 | ------- | ------ |
-| ![](https://raw.githubusercontent.com/VincentUhlmann/Plugin.DynamicAlert/main/gifs/android.gif) | ![](https://raw.githubusercontent.com/VincentUhlmann/Plugin.DynamicAlert/main/gifs/android.gif) |
+| ![](https://raw.githubusercontent.com/VincentUhlmann/Plugin.DynamicAlert/main/gifs/android.gif) | ![](https://raw.githubusercontent.com/VincentUhlmann/Plugin.DynamicAlert/main/gifs/iphone.gif) |
 
 ## Installation
 
