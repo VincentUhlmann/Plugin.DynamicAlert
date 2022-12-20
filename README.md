@@ -6,6 +6,12 @@ So far, the appearance and position are not changeable but follow the default be
 Compatible with all platforms supported by .NET MAUI except windows. 
 If a Windows implementation or other changes are needed, I am happy about any pull request!
 
+## Example
+
+| Android | iPhone |
+| ------- | ------ |
+| ![](https://raw.githubusercontent.com/VincentUhlmann/Plugin.DynamicAlert/main/gifs/android.gif) | ![](https://raw.githubusercontent.com/VincentUhlmann/Plugin.DynamicAlert/main/gifs/android.gif) |
+
 ## Installation
 
 The plugin is available on NuGet.
