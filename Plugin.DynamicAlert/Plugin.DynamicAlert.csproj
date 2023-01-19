@@ -1,22 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<NeutralLanguage>en</NeutralLanguage>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Version>1.1.0</Version>
-		<AssemblyVersion>1.1.0</AssemblyVersion>
-		<AssemblyFileVersion>1.1.0</AssemblyFileVersion>
+		<Version>1.2.0</Version>
+		<AssemblyVersion>1.2.0</AssemblyVersion>
+		<AssemblyFileVersion>1.2.0</AssemblyFileVersion>
 		<AssemblyName>Plugin.DynamicAlert</AssemblyName>
 		<RootNamespace>Plugin.DynamicAlert</RootNamespace>
 		<PackageId>Plugin.DynamicAlert</PackageId>
 		<Product>$(AssemblyName) ($(TargetFramework))</Product>
 		<Authors>Vincent Uhlmann</Authors>
-		<Title>.NET MAUI plugin for mutable alerts</Title>
-		<Summary>.NET MAUI plugin for mutable alerts</Summary>
-		<Description>.NET MAUI plugin for mutable alerts</Description>
+		<Title>.NET MAUI plugin for mutable alerts.</Title>
+		<Summary>.NET MAUI plugin for mutable alerts.</Summary>
+		<Description>.NET MAUI plugin for mutable alerts.</Description>
 		<Copyright>© Vincent Uhlmann. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</RepositoryUrl>
 		<Owners>VincentUhlmann</Owners>
@@ -44,7 +44,7 @@
 	
 	<ItemGroup>
 	  <None Include="..\LICENSE" Pack="true" PackagePath="" />
-	  <None Include="..\README.md" Pack="true" PackagePath="\"/>
-	  <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.0.0" />
+	  <None Include="..\README.md" Pack="true" PackagePath="\" />
+	  <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.1.0" />
 	</ItemGroup>
 </Project>

@@ -11,7 +11,7 @@ public sealed partial class DynamicAlert
         Guard.IsNotNullOrWhiteSpace(title, nameof(title));
         Guard.IsNotNullOrWhiteSpace(message, nameof(message));
 
-        _alertDialog = new AlertDialog.Builder(Platform.CurrentActivity).SetTitle(title).SetMessage(message).SetCancelable(false).Create();
+        _alertDialog = new AlertDialog.Builder(Platform.CurrentActivity!)!.SetTitle(title)!.SetMessage(message)!.SetCancelable(false)!.Create();
         _alertDialog.Show();
     }
 
