@@ -25,3 +25,5 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --configuration Release --no-build
+    - name: Push
+      run: dotnet nuget push "**/Release/*.nupkg" -k ${{ secrets.NUGET }} -s https://api.nuget.org/v3/index.json
