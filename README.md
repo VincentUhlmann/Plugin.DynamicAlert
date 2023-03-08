@@ -30,13 +30,13 @@ After installation the plugin can be used as follows:
 public async Task UpdateDynamicAlertAsync()
     {
         // Creates a new alert with the specified title and message
-        var alert = new DynamicAlert("This is a title", "This is a message");
+        var alert = new DynamicAlert("Title", "Message");
 
         for(int i = 0; i < 10; i ++) {
             await Task.Delay(TimeSpan.FromSeconds(1));
 
             // Updates the alert with the new message
-            alert.Update($"The index of the loop is: {i}");
+            alert.Update($"Title count": {i}");
         }
 
         // Remove the alert when you are done
