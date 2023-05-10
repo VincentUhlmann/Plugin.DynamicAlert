@@ -3,7 +3,7 @@ name: NuGet
 on:
   push:
     tags:
-    - "v*.*.*"
+      - "v*.*.*"
   workflow_dispatch:
 
 jobs:
@@ -11,19 +11,19 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 15
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 7.x.x
-    - name: Install MAUI workload
-      run: dotnet workload install maui
-    - name: Restore
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --configuration Release --no-build
-    - name: Push
-      run: dotnet nuget push "**/Release/*.nupkg" -k ${{ secrets.NUGET }} -s https://api.nuget.org/v3/index.json
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.x.x
+      - name: Install MAUI workload
+        run: dotnet workload install maui
+      - name: Restore
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Test
+        run: dotnet test --configuration Release --no-build
+      - name: Push
+        run: dotnet nuget push "**/Release/*.nupkg" -k ${{ secrets.NUGET }} -s https://api.nuget.org/v3/index.json
