@@ -5,9 +5,9 @@
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<NeutralLanguage>en</NeutralLanguage>
-		<Version>1.4.0</Version>
-		<AssemblyVersion>1.4.0</AssemblyVersion>
-		<AssemblyFileVersion>1.4.0</AssemblyFileVersion>
+		<Version>1.4.1</Version>
+		<AssemblyVersion>1.4.1</AssemblyVersion>
+		<AssemblyFileVersion>1.4.1</AssemblyFileVersion>
 		<PackageId>Plugin.DynamicAlert</PackageId>
 		<AssemblyName>Plugin.DynamicAlert</AssemblyName>
 		<RootNamespace>Plugin.DynamicAlert</RootNamespace>
@@ -17,7 +17,7 @@
 		<Title>.NET MAUI plugin for mutable alerts.</Title>
 		<Summary>.NET MAUI plugin for mutable alerts.</Summary>
 		<Description>.NET MAUI plugin for mutable alerts.</Description>
-		<Copyright>© Vincent Uhlmann. All rights reserved.</Copyright>
+		<Copyright>© 2023 Vincent Uhlmann. - All rights reserved.</Copyright>
 		<PackageTags>plugin, .net, alert, maui</PackageTags>
 		<RepositoryUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/VincentUhlmann/Plugin.DynamicAlert</PackageProjectUrl>
