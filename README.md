@@ -3,8 +3,7 @@
 This plugin provides a simple platform specific implementation of a alert whose text can be updated.
 It is useful to show progress for example. The alerts cannot be closed by the user by default.
 So far, the appearance and position are not changeable but follow the default behavior of the operating system.
-Compatible with all platforms supported by .NET MAUI except windows.
-If a Windows implementation or other changes are needed, I am happy about any pull request!
+Compatible with Android, iOS and Mac.
 
 ## Example
 
