@@ -16,11 +16,8 @@ public sealed partial class DynamicAlert
     /// <param name="message">The message of the alert.</param>
     public DynamicAlert(string title, string message)
     {
-        if (string.IsNullOrWhiteSpace(title))
-            throw new ArgumentNullException(nameof(title));
-
-        if (string.IsNullOrWhiteSpace(message))
-            throw new ArgumentNullException(nameof(message));
+        ArgumentException.ThrowIfNullOrEmpty(title, nameof(title));
+        ArgumentException.ThrowIfNullOrEmpty(message, nameof(message));
 
         _alertDialog = new AlertDialog.Builder(Platform.CurrentActivity!)!.SetTitle(title)!.SetMessage(message)!.SetCancelable(false)!.Create();
         _alertDialog.Show();
@@ -32,8 +29,7 @@ public sealed partial class DynamicAlert
     /// <param name="message">The new message of the alert.</param>
     public void Update(string message)
     {
-        if (string.IsNullOrWhiteSpace(message))
-            throw new ArgumentNullException(nameof(message));
+        ArgumentException.ThrowIfNullOrEmpty(message, nameof(message));
 
         _alertDialog.SetMessage(message);
     }

@@ -16,11 +16,8 @@ public sealed partial class DynamicAlert
     /// <param name="message">The message of the alert.</param>
     public DynamicAlert(string title, string message)
     {
-        if (string.IsNullOrWhiteSpace(title))
-            throw new ArgumentNullException(nameof(title));
-
-        if (string.IsNullOrWhiteSpace(message))
-            throw new ArgumentNullException(nameof(message));
+        ArgumentException.ThrowIfNullOrEmpty(title, nameof(title));
+        ArgumentException.ThrowIfNullOrEmpty(message, nameof(message));
 
         UIApplication.SharedApplication.InvokeOnMainThread(() => {
             _alertController = UIAlertController.Create(title, message, UIAlertControllerStyle.Alert);
@@ -39,8 +36,7 @@ public sealed partial class DynamicAlert
     /// <param name="message">The new message of the alert.</param>
     public void Update(string message)
     {
-        if (string.IsNullOrWhiteSpace(message))
-            throw new ArgumentNullException(nameof(message));
+        ArgumentException.ThrowIfNullOrEmpty(message, nameof(message));
 
         UIApplication.SharedApplication.InvokeOnMainThread(() => {
             if (_alertController is not null)
